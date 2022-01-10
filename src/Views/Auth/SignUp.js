@@ -10,6 +10,7 @@ export default function SignUp() {
     e.preventDefault();
     try {
       const response = await signUpUser(email, password);
+      //   console.log(response);
     } catch {
       setError('Oh No Something is wrong! Try Again!');
     }

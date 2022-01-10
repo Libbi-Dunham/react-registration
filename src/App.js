@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { useState } from 'react';
 import { getUser, logout } from './services/users';
-// import Auth from './Views/Auth/Auth';
-import SignIn from './Views/Auth/SignIn';
+import Auth from './Views/Auth/Auth';
+// import SignIn from './Views/Auth/SignIn';
 import './App.css';
 
 function App() {
@@ -22,8 +22,8 @@ function App() {
                 <button onClick={logoutUser}>Log Out</button>
               </>
             )}
-            {!currentUser && <h1>Not signed it</h1>}
-            <SignIn />
+            {!currentUser && <Auth setCurrentUser={setCurrentUser} />}
+            {/* <SignIn /> */}
           </Route>
         </Switch>
       </BrowserRouter>

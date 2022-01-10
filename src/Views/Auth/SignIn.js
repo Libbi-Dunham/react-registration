@@ -10,6 +10,7 @@ export default function SignIn() {
     e.preventDefault();
     try {
       const response = await signInUser(email, password);
+      //   console.log(response);
     } catch {
       setError('Oh No Something is wrong! Try Again!');
     }

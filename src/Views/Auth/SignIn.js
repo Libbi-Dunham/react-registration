@@ -9,8 +9,7 @@ export default function SignIn() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await signInUser(email, password);
-      //   console.log(response);
+      await signInUser(email, password);
     } catch {
       setError('Oh No Something is wrong! Try Again!');
     }

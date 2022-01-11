@@ -44,7 +44,7 @@ export default function Auth({ setCurrentUser }) {
           Sign Up
         </h2>
       </div>
-      <p>{type}</p>
+      <p>Enter: {type}</p>
       <AuthForm
         email={email}
         setEmail={setEmail}
